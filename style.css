@@ -17,6 +17,8 @@ body{
     font-family:'Inter',sans-serif;
 
     overflow-x:hidden;
+
+    scroll-behavior:smooth;
 }
 
 /* HERO */
@@ -82,8 +84,8 @@ header{
     1px solid rgba(255,255,255,0.05);
 
     background:
-    rgba(8,8,8,0.15);
-
+    rgba(8,8,8,0.35);
+    
     backdrop-filter:blur(14px);
 }
 
