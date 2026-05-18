@@ -186,3 +186,134 @@
     }
 
   }
+
+/* PHILOSOPHY */
+
+.philosophy{
+    padding:180px 7%;
+
+    background:#0A0A0A;
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1.2fr;
+
+    gap:100px;
+}
+
+/* LEFT */
+
+.philosophy-left p{
+    color:#C9A97D;
+
+    letter-spacing:6px;
+
+    margin-bottom:24px;
+
+    font-size:0.8rem;
+}
+
+.philosophy-left h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:5.5rem;
+    font-weight:300;
+
+    line-height:0.95;
+}
+
+/* RIGHT */
+
+.philosophy-right{
+    display:flex;
+    flex-direction:column;
+
+    gap:55px;
+}
+
+/* ITEM */
+
+.philosophy-item{
+    display:flex;
+
+    gap:35px;
+
+    padding-bottom:45px;
+
+    border-bottom:
+    1px solid rgba(255,255,255,0.06);
+}
+
+/* NUMBER */
+
+.philosophy-item span{
+    color:#C9A97D;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:2rem;
+}
+
+/* TITLE */
+
+.philosophy-item h3{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:2.1rem;
+    font-weight:300;
+
+    margin-bottom:18px;
+
+    color:#F5F1E8;
+}
+
+/* TEXT */
+
+.philosophy-item p{
+    color:#BEBEBE;
+
+    line-height:2;
+
+    max-width:620px;
+}
+
+/* TABLET */
+
+@media(max-width:900px){
+
+    .philosophy{
+        grid-template-columns:1fr;
+
+        gap:70px;
+    }
+
+    .philosophy-left h2{
+        font-size:4rem;
+    }
+
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .philosophy{
+        padding:120px 7%;
+    }
+
+    .philosophy-left h2{
+        font-size:3rem;
+    }
+
+    .philosophy-item{
+        flex-direction:column;
+
+        gap:18px;
+    }
+
+    .philosophy-item h3{
+        font-size:1.8rem;
+    }
+
+    }
