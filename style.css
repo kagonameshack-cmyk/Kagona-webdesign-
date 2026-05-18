@@ -282,18 +282,41 @@ nav a:hover::after{
     background:#F5F1E8;
 }
 
+/* ANIMATION */
+
+.menu-toggle span{
+    transition:0.5s ease;
+}
+
+/* TOP LINE */
+
+.menu-toggle.active span:nth-child(1){
+    transform:
+    rotate(45deg)
+    translate(5px,5px);
+}
+
+/* BOTTOM LINE */
+
+.menu-toggle.active span:nth-child(2){
+    transform:
+    rotate(-45deg)
+    translate(5px,-5px);
+}
+
 /* MOBILE MENU */
 
 .mobile-menu{
     position:fixed;
 
-    top:0;
-    right:-100%;
+    inset:0;
 
-    width:100%;
-    height:100vh;
+    background:
+    rgba(5,5,5,0.94);
 
-    background:#050505;
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
 
     display:flex;
     flex-direction:column;
@@ -301,27 +324,68 @@ nav a:hover::after{
     justify-content:center;
     align-items:center;
 
-    gap:35px;
+    gap:28px;
+
+    opacity:0;
+    visibility:hidden;
 
     transition:0.6s ease;
 
     z-index:150;
 }
 
+/* ACTIVE */
+
 .mobile-menu.active{
-    right:0;
+    opacity:1;
+    visibility:visible;
 }
 
+/* LINKS */
+
 .mobile-menu a{
+    position:relative;
+
     color:#F5F1E8;
 
     text-decoration:none;
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:2rem;
+    font-size:3rem;
+    font-weight:300;
 
-    letter-spacing:3px;
+    letter-spacing:4px;
+
+    transition:0.4s ease;
+}
+
+/* GOLD HOVER */
+
+.mobile-menu a:hover{
+    color:#C9A97D;
+}
+
+/* UNDERLINE */
+
+.mobile-menu a::after{
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-10px;
+
+    width:0%;
+    height:1px;
+
+    background:#C9A97D;
+
+    transition:0.5s ease;
+}
+
+.mobile-menu a:hover::after{
+    width:100%;
 }
 
 /* TABLET */
