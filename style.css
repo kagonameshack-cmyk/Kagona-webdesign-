@@ -821,3 +821,181 @@
     }
 
 }
+
+
+/* FOOTER */
+
+.footer{
+    position:relative;
+
+    height:100vh;
+
+    background:
+    url('images/footer.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    overflow:hidden;
+}
+
+/* OVERLAY */
+
+.footer-overlay{
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.92)
+    );
+}
+
+/* CONTENT */
+
+.footer-content{
+    position:relative;
+
+    z-index:5;
+
+    padding:0 7%;
+}
+
+.footer-content p{
+    color:#C9A97D;
+
+    letter-spacing:6px;
+
+    margin-bottom:28px;
+
+    font-size:0.8rem;
+}
+
+.footer-content h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:6rem;
+    font-weight:300;
+
+    line-height:0.95;
+
+    margin-bottom:45px;
+}
+
+/* BUTTON */
+
+.footer-content a{
+    display:inline-block;
+
+    padding:18px 42px;
+
+    border:
+    1px solid rgba(255,255,255,0.12);
+
+    color:#F5F1E8;
+
+    text-decoration:none;
+
+    letter-spacing:3px;
+
+    font-size:0.78rem;
+
+    transition:0.5s ease;
+}
+
+.footer-content a:hover{
+    background:#F5F1E8;
+
+    color:#050505;
+}
+
+/* BOTTOM */
+
+.footer-bottom{
+    position:absolute;
+
+    bottom:35px;
+    left:7%;
+    right:7%;
+
+    z-index:5;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* COPYRIGHT */
+
+.footer-bottom span{
+    color:#8E8E8E;
+
+    font-size:0.82rem;
+
+    letter-spacing:1px;
+}
+
+/* LINKS */
+
+.footer-links{
+    display:flex;
+
+    gap:35px;
+}
+
+.footer-links a{
+    color:#BEBEBE;
+
+    text-decoration:none;
+
+    font-size:0.82rem;
+
+    letter-spacing:1px;
+
+    transition:0.4s ease;
+}
+
+.footer-links a:hover{
+    color:#C9A97D;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .footer-content h2{
+        font-size:4rem;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .footer{
+        height:85vh;
+    }
+
+    .footer-content h2{
+        font-size:3rem;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+
+        gap:18px;
+    }
+
+    .footer-links{
+        gap:20px;
+    }
+
+    }
