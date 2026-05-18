@@ -1,3 +1,368 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+
+    box-sizing:border-box;
+}
+
+/* BODY */
+
+body{
+    background:#050505;
+
+    color:#F5F1E8;
+
+    font-family:'Inter',sans-serif;
+
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+    position:relative;
+
+    min-height:100vh;
+
+    overflow:hidden;
+}
+
+/* VIDEO */
+
+.hero-video{
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+/* OVERLAY */
+
+.overlay{
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.35),
+        rgba(0,0,0,0.88)
+    );
+}
+
+/* HEADER */
+
+header{
+    width:92%;
+
+    position:absolute;
+
+    top:25px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    padding:24px 40px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    z-index:100;
+
+    border:
+    1px solid rgba(255,255,255,0.05);
+
+    background:
+    rgba(8,8,8,0.15);
+
+    backdrop-filter:blur(14px);
+}
+
+/* LOGO */
+
+.logo{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:1.5rem;
+    font-weight:500;
+
+    letter-spacing:6px;
+
+    color:#F5F1E8;
+}
+
+/* NAV */
+
+nav{
+    display:flex;
+
+    gap:45px;
+}
+
+nav a{
+    position:relative;
+
+    color:#EAEAEA;
+
+    text-decoration:none;
+
+    font-size:0.82rem;
+
+    letter-spacing:2px;
+
+    transition:0.4s ease;
+}
+
+/* HOVER LINE */
+
+nav a::after{
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-8px;
+
+    width:0%;
+    height:1px;
+
+    background:#C9A97D;
+
+    transition:0.5s ease;
+}
+
+nav a:hover{
+    color:#C9A97D;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+/* HERO CONTENT */
+
+.hero-content{
+    position:relative;
+
+    z-index:5;
+
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding:0 7%;
+
+    max-width:900px;
+}
+
+/* SMALL TEXT */
+
+.hero-content p{
+    color:#C9A97D;
+
+    letter-spacing:6px;
+
+    margin-bottom:30px;
+
+    font-size:0.8rem;
+}
+
+/* TITLE */
+
+.hero-content h1{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:7rem;
+    font-weight:300;
+
+    line-height:0.92;
+
+    margin-bottom:35px;
+}
+
+/* DESCRIPTION */
+
+.hero-content span{
+    color:#D2D2D2;
+
+    line-height:2;
+
+    max-width:620px;
+
+    display:block;
+
+    margin-bottom:50px;
+}
+
+/* BUTTONS */
+
+.hero-buttons{
+    display:flex;
+
+    gap:24px;
+
+    flex-wrap:wrap;
+}
+
+/* BUTTON */
+
+.hero-buttons a{
+    display:inline-block;
+
+    padding:18px 40px;
+
+    border:
+    1px solid rgba(255,255,255,0.12);
+
+    color:#F5F1E8;
+
+    text-decoration:none;
+
+    letter-spacing:3px;
+
+    font-size:0.78rem;
+
+    transition:0.5s ease;
+}
+
+/* PRIMARY HOVER */
+
+.hero-buttons a:hover{
+    background:#F5F1E8;
+
+    color:#050505;
+}
+
+/* SECONDARY */
+
+.secondary-btn{
+    background:
+    rgba(255,255,255,0.04);
+}
+
+/* MOBILE TOGGLE */
+
+.menu-toggle{
+    display:none;
+
+    flex-direction:column;
+
+    gap:6px;
+
+    cursor:pointer;
+
+    z-index:200;
+}
+
+.menu-toggle span{
+    width:28px;
+    height:1px;
+
+    background:#F5F1E8;
+}
+
+/* MOBILE MENU */
+
+.mobile-menu{
+    position:fixed;
+
+    top:0;
+    right:-100%;
+
+    width:100%;
+    height:100vh;
+
+    background:#050505;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:35px;
+
+    transition:0.6s ease;
+
+    z-index:150;
+}
+
+.mobile-menu.active{
+    right:0;
+}
+
+.mobile-menu a{
+    color:#F5F1E8;
+
+    text-decoration:none;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:2rem;
+
+    letter-spacing:3px;
+}
+
+/* TABLET */
+
+@media(max-width:900px){
+
+    .hero-content h1{
+        font-size:5rem;
+    }
+
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    nav{
+        display:none;
+    }
+
+    .menu-toggle{
+        display:flex;
+    }
+
+    header{
+        padding:22px 28px;
+    }
+
+    .hero-content{
+        padding:0 7%;
+    }
+
+    .hero-content h1{
+        font-size:3.5rem;
+
+        line-height:1;
+    }
+
+    .hero-content span{
+        font-size:0.95rem;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+
+        align-items:flex-start;
+    }
+
+    }
+
 /* PROJECTS */
 
 .projects{
