@@ -652,3 +652,172 @@
     }
 
 }
+
+
+/* CONTACT */
+
+.contact{
+    padding:180px 7%;
+
+    background:#050505;
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:100px;
+}
+
+/* LEFT */
+
+.contact-left p{
+    color:#C9A97D;
+
+    letter-spacing:6px;
+
+    margin-bottom:24px;
+
+    font-size:0.8rem;
+}
+
+.contact-left h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:5.5rem;
+    font-weight:300;
+
+    line-height:0.95;
+
+    margin-bottom:35px;
+}
+
+.contact-left span{
+    color:#BEBEBE;
+
+    line-height:2;
+
+    max-width:520px;
+
+    display:block;
+}
+
+/* FORM */
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+
+    gap:32px;
+}
+
+/* INPUT */
+
+.input-group input,
+.input-group textarea{
+    width:100%;
+
+    background:transparent;
+
+    border:none;
+
+    border-bottom:
+    1px solid rgba(255,255,255,0.08);
+
+    padding:24px 0;
+
+    color:#F5F1E8;
+
+    font-size:1rem;
+
+    outline:none;
+
+    transition:0.4s ease;
+}
+
+/* TEXTAREA */
+
+.input-group textarea{
+    min-height:160px;
+
+    resize:none;
+}
+
+/* PLACEHOLDER */
+
+.input-group input::placeholder,
+.input-group textarea::placeholder{
+    color:#7E7E7E;
+
+    letter-spacing:1px;
+}
+
+/* FOCUS */
+
+.input-group input:focus,
+.input-group textarea:focus{
+    border-color:#C9A97D;
+}
+
+/* BUTTON */
+
+.contact-form button{
+    width:fit-content;
+
+    margin-top:10px;
+
+    padding:18px 42px;
+
+    background:transparent;
+
+    border:
+    1px solid rgba(255,255,255,0.12);
+
+    color:#F5F1E8;
+
+    letter-spacing:3px;
+
+    font-size:0.78rem;
+
+    cursor:pointer;
+
+    transition:0.5s ease;
+}
+
+/* HOVER */
+
+.contact-form button:hover{
+    background:#F5F1E8;
+
+    color:#050505;
+}
+
+/* TABLET */
+
+@media(max-width:900px){
+
+    .contact{
+        grid-template-columns:1fr;
+
+        gap:70px;
+    }
+
+    .contact-left h2{
+        font-size:4rem;
+    }
+
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .contact{
+        padding:120px 7%;
+    }
+
+    .contact-left h2{
+        font-size:3rem;
+    }
+
+}
