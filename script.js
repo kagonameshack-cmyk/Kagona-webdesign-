@@ -1,17 +1,21 @@
-const menuToggle = document.querySelector(".menu-toggle");
+const menuToggle =
+document.querySelector(".menu-toggle");
 
-const mobileMenu = document.querySelector(".mobile-menu");
+const mobileMenu =
+document.querySelector(".mobile-menu");
 
 const mobileLinks =
 document.querySelectorAll(".mobile-menu a");
 
-/* TOGGLE MENU */
+/* TOGGLE */
 
 menuToggle.addEventListener("click", () => {
 
     mobileMenu.classList.toggle("active");
 
     menuToggle.classList.toggle("active");
+
+    document.body.classList.toggle("menu-open");
 
 });
 
@@ -24,6 +28,8 @@ mobileLinks.forEach(link => {
         mobileMenu.classList.remove("active");
 
         menuToggle.classList.remove("active");
+
+        document.body.classList.remove("menu-open");
 
     });
 
