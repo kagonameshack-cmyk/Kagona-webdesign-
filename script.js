@@ -1,35 +1,28 @@
-const menuToggle =
-document.querySelector(".menu-toggle");
+const toggle =
+document.querySelector('.menu-toggle');
 
-const mobileMenu =
-document.querySelector(".mobile-menu");
+const menu =
+document.querySelector('.mobile-menu');
 
-const mobileLinks =
-document.querySelectorAll(".mobile-menu a");
+toggle.addEventListener('click', () => {
 
-/* TOGGLE */
+    toggle.classList.toggle('active');
 
-menuToggle.addEventListener("click", () => {
-
-    mobileMenu.classList.toggle("active");
-
-    menuToggle.classList.toggle("active");
-
-    document.body.classList.toggle("menu-open");
+    menu.classList.toggle('active');
 
 });
 
-/* CLOSE AFTER CLICK */
+/* CLOSE MENU ON LINK CLICK */
 
-mobileLinks.forEach(link => {
+document.querySelectorAll(
+'.mobile-menu a'
+).forEach(link => {
 
-    link.addEventListener("click", () => {
+    link.addEventListener('click', () => {
 
-        mobileMenu.classList.remove("active");
+        toggle.classList.remove('active');
 
-        menuToggle.classList.remove("active");
-
-        document.body.classList.remove("menu-open");
+        menu.classList.remove('active');
 
     });
 
