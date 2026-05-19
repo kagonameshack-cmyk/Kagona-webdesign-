@@ -10,7 +10,7 @@
 content="width=device-width, initial-scale=1.0">
 
 <title>
-Inquiry Sent
+Inquiry Sent • Kagona
 </title>
 
 <link rel="preconnect"
@@ -25,55 +25,124 @@ rel="stylesheet">
 
 <style>
 
+/* RESET */
+
 *{
     margin:0;
     padding:0;
+
     box-sizing:border-box;
 }
 
-body{
-    height:100vh;
+/* BODY */
 
+body{
     background:#050505;
 
     color:#F5F1E8;
 
+    font-family:'Inter',sans-serif;
+
+    min-height:100vh;
+
     display:flex;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
+
+    overflow:hidden;
+
+    position:relative;
+}
+
+/* BACKGROUND GLOW */
+
+body::before{
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    background:
+    radial-gradient(
+        circle,
+        rgba(201,169,125,0.12),
+        transparent 70%
+    );
+
+    top:50%;
+    left:50%;
+
+    transform:
+    translate(-50%,-50%);
+
+    z-index:1;
+}
+
+/* CONTAINER */
+
+.success-box{
+    position:relative;
+
+    z-index:5;
 
     text-align:center;
 
-    padding:7%;
+    padding:0 7%;
 
-    font-family:'Inter',sans-serif;
+    max-width:850px;
 }
 
-.success-box h1{
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:5rem;
-    font-weight:300;
-
-    margin-bottom:25px;
-}
+/* SMALL TEXT */
 
 .success-box p{
+    color:#C9A97D;
+
+    letter-spacing:6px;
+
+    font-size:0.8rem;
+
+    margin-bottom:30px;
+}
+
+/* TITLE */
+
+.success-box h1{
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:6rem;
+    font-weight:300;
+
+    line-height:0.95;
+
+    margin-bottom:35px;
+}
+
+/* DESCRIPTION */
+
+.success-box span{
+    display:block;
+
     color:#BEBEBE;
 
     line-height:2;
 
-    max-width:620px;
+    max-width:650px;
 
-    margin:auto auto 45px;
+    margin:auto auto 50px;
 }
+
+/* BUTTON */
 
 .success-box a{
     display:inline-block;
 
     padding:18px 42px;
 
-    border:1px solid rgba(255,255,255,0.12);
+    border:
+    1px solid rgba(255,255,255,0.12);
 
     color:#F5F1E8;
 
@@ -86,16 +155,20 @@ body{
     transition:0.5s ease;
 }
 
+/* HOVER */
+
 .success-box a:hover{
     background:#F5F1E8;
 
     color:#050505;
 }
 
+/* MOBILE */
+
 @media(max-width:600px){
 
     .success-box h1{
-        font-size:3rem;
+        font-size:3.5rem;
     }
 
 }
@@ -108,22 +181,28 @@ body{
 
 <div class="success-box">
 
+    <p>
+        INQUIRY RECEIVED
+    </p>
+
     <h1>
-        Inquiry Submitted
+
+        Thank You <br>
+        For Reaching Out
+
     </h1>
 
-    <p>
+    <span>
 
-        Thank you for reaching out to Kagona.
-        Your inquiry has been received successfully.
-        We will respond shortly with the next steps
-        regarding your project.
+        Your inquiry has been successfully submitted.
+        Kagona will review your project and
+        respond shortly with the next steps.
 
-    </p>
+    </span>
 
     <a href="index.html">
 
-        RETURN HOME
+        BACK TO HOME
 
     </a>
 
