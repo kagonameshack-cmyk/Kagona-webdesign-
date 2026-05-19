@@ -390,6 +390,14 @@ nav a:hover::after{
     color:#C9A97D;
         }
 
+/* PREVENT SIDE OVERFLOW */
+
+html,
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+
 /* TABLET */
 
 @media(max-width:900px){
