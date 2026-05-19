@@ -274,7 +274,9 @@ nav a:hover::after{
 
     cursor:pointer;
 
-    z-index:200;
+    position:relative;
+
+    z-index:10000;
 }
 
 .menu-toggle span{
@@ -311,11 +313,7 @@ nav a:hover::after{
 .mobile-menu{
     position:fixed;
 
-    top:0;
-    left:0;
-
-    width:100%;
-    height:100vh;
+    inset:0;
 
     background:
     rgba(5,5,5,0.98);
@@ -345,6 +343,10 @@ nav a:hover::after{
 .mobile-menu.active{
     opacity:1;
     visibility:visible;
+}
+
+body.menu-open{
+    overflow:hidden;
 }
 
 /* LINKS */
