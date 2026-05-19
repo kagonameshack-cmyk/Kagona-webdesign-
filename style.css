@@ -624,6 +624,162 @@ nav a:hover::after{
 
   }
 
+/* JOURNAL */
+
+.journal{
+    padding:180px 7%;
+
+    background:#050505;
+}
+
+/* TITLE */
+
+.journal-title{
+    margin-bottom:90px;
+}
+
+.journal-title p{
+    color:#C9A97D;
+
+    letter-spacing:6px;
+
+    margin-bottom:24px;
+
+    font-size:0.8rem;
+}
+
+.journal-title h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:5.5rem;
+    font-weight:300;
+
+    line-height:0.95;
+}
+
+/* GRID */
+
+.journal-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:35px;
+}
+
+/* CARD */
+
+.journal-card{
+    text-decoration:none;
+
+    color:inherit;
+}
+
+/* IMAGE */
+
+.journal-image{
+    overflow:hidden;
+
+    margin-bottom:30px;
+}
+
+.journal-image img{
+    width:100%;
+    height:520px;
+
+    object-fit:cover;
+
+    transition:
+    transform 1.2s ease,
+    filter 1s ease;
+}
+
+/* HOVER */
+
+.journal-card:hover img{
+    transform:scale(1.06);
+
+    filter:brightness(1.05);
+}
+
+/* CATEGORY */
+
+.journal-content span{
+    color:#C9A97D;
+
+    letter-spacing:3px;
+
+    font-size:0.72rem;
+
+    display:block;
+
+    margin-bottom:18px;
+}
+
+/* TITLE */
+
+.journal-content h3{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:2.1rem;
+    font-weight:300;
+
+    line-height:1.1;
+
+    margin-bottom:20px;
+
+    color:#F5F1E8;
+}
+
+/* TEXT */
+
+.journal-content p{
+    color:#BEBEBE;
+
+    line-height:2;
+}
+
+/* TABLET */
+
+@media(max-width:900px){
+
+    .journal-grid{
+        grid-template-columns:1fr;
+    }
+
+    .journal-title h2{
+        font-size:4rem;
+    }
+
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .journal{
+        padding:120px 7%;
+    }
+
+    .journal-title{
+        margin-bottom:60px;
+    }
+
+    .journal-title h2{
+        font-size:3rem;
+    }
+
+    .journal-image img{
+        height:420px;
+    }
+
+    .journal-content h3{
+        font-size:1.9rem;
+    }
+
+        }
+
 /* PHILOSOPHY */
 
 .philosophy{
