@@ -1560,24 +1560,45 @@ nav a:hover::after{
 .footer-links{
     display:flex;
 
-    gap:35px;
+    gap:22px;
 }
 
 .footer-links a{
-    color:#BEBEBE;
+    width:46px;
+    height:46px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    color:#C9A97D;
 
     text-decoration:none;
 
-    font-size:0.82rem;
+    font-size:1.05rem;
 
-    letter-spacing:1px;
+    transition:0.45s ease;
 
-    transition:0.4s ease;
+    background:
+    rgba(255,255,255,0.02);
 }
 
 .footer-links a:hover{
-    color:#C9A97D;
-}
+
+    transform:translateY(-4px);
+
+    border-color:
+    rgba(201,169,125,0.35);
+
+    background:
+    rgba(201,169,125,0.08);
+
+    box-shadow:
+    0 0 20px rgba(201,169,125,0.12);
+    }
 
 /* MOBILE */
 
