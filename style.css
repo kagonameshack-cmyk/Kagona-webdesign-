@@ -1407,17 +1407,17 @@ nav a:hover::after{
 
 .contact-note{
 
-    margin-top:40px;
+    margin-top:28px;
 
-    color:#8E8E8E;
+    color:#9A9A9A;
 
-    font-size:0.82rem;
+    font-size:0.95rem;
 
-    letter-spacing:1px;
+    line-height:1.9;
 
-    line-height:2;
+    max-width:420px;
 
-    max-width:480px;
+    letter-spacing:0.5px;
 }
 
 /* TABLET */
