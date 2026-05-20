@@ -1403,6 +1403,23 @@ nav a:hover::after{
     color:#050505;
 }
 
+/* CONTACT NOTE */
+
+.contact-note{
+
+    margin-top:40px;
+
+    color:#8E8E8E;
+
+    font-size:0.82rem;
+
+    letter-spacing:1px;
+
+    line-height:2;
+
+    max-width:480px;
+}
+
 /* TABLET */
 
 @media(max-width:900px){
