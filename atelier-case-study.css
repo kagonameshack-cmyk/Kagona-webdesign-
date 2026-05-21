@@ -1,0 +1,351 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+
+    box-sizing:border-box;
+}
+
+/* BODY */
+
+body{
+    background:#050505;
+
+    color:#F5F1E8;
+
+    font-family:'Inter',sans-serif;
+
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.case-hero{
+    position:relative;
+
+    height:100vh;
+
+    overflow:hidden;
+}
+
+/* IMAGE */
+
+.case-hero img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transform:scale(1.04);
+}
+
+/* OVERLAY */
+
+.hero-overlay{
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.25),
+        rgba(0,0,0,0.88)
+    );
+
+    z-index:1;
+}
+
+/* CONTENT */
+
+.hero-content{
+    position:absolute;
+
+    left:7%;
+    bottom:10%;
+
+    z-index:5;
+
+    max-width:900px;
+}
+
+/* SMALL TEXT */
+
+.hero-content p{
+    color:#C9A97D;
+
+    letter-spacing:6px;
+
+    margin-bottom:30px;
+
+    font-size:0.78rem;
+}
+
+/* TITLE */
+
+.hero-content h1{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:7rem;
+    font-weight:300;
+
+    line-height:0.92;
+}
+
+/* OVERVIEW */
+
+.overview{
+    padding:180px 7%;
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:100px;
+
+    background:#070707;
+}
+
+/* LEFT */
+
+.overview-left p{
+    color:#C9A97D;
+
+    letter-spacing:6px;
+
+    margin-bottom:24px;
+
+    font-size:0.78rem;
+}
+
+.overview-left h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:4.8rem;
+    font-weight:300;
+
+    line-height:1;
+}
+
+/* RIGHT */
+
+.overview-right{
+    display:flex;
+
+    align-items:flex-end;
+}
+
+.overview-right p{
+    color:#BEBEBE;
+
+    line-height:2;
+
+    max-width:520px;
+}
+
+/* SHOWCASE */
+
+.showcase{
+    background:#050505;
+}
+
+.showcase img{
+    width:100%;
+    display:block;
+
+    margin-bottom:35px;
+}
+
+/* DIRECTION */
+
+.direction{
+    padding:220px 7%;
+
+    background:#0A0A0A;
+
+    text-align:center;
+}
+
+/* SMALL TEXT */
+
+.direction p{
+    color:#C9A97D;
+
+    letter-spacing:6px;
+
+    margin-bottom:35px;
+
+    font-size:0.78rem;
+}
+
+/* TITLE */
+
+.direction h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:5.5rem;
+    font-weight:300;
+
+    line-height:1;
+
+    max-width:1100px;
+
+    margin:auto;
+}
+
+/* MOBILE EXPERIENCE */
+
+.mobile-experience{
+    padding:180px 7%;
+
+    background:#050505;
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:100px;
+}
+
+/* LEFT */
+
+.mobile-left p{
+    color:#C9A97D;
+
+    letter-spacing:6px;
+
+    margin-bottom:24px;
+
+    font-size:0.78rem;
+}
+
+.mobile-left h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:4.5rem;
+    font-weight:300;
+
+    line-height:1;
+}
+
+/* RIGHT */
+
+.mobile-right{
+    display:flex;
+
+    gap:30px;
+
+    justify-content:flex-end;
+}
+
+/* MOBILE IMAGES */
+
+.mobile-right img{
+    width:48%;
+
+    border:
+    1px solid rgba(255,255,255,0.05);
+}
+
+/* CLOSING */
+
+.closing{
+    padding:220px 7%;
+
+    background:#0A0A0A;
+
+    text-align:center;
+}
+
+/* SMALL TEXT */
+
+.closing p{
+    color:#C9A97D;
+
+    letter-spacing:6px;
+
+    margin-bottom:35px;
+
+    font-size:0.78rem;
+}
+
+/* TITLE */
+
+.closing h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:5rem;
+    font-weight:300;
+
+    line-height:1;
+
+    max-width:1000px;
+
+    margin:auto;
+}
+
+/* TABLET */
+
+@media(max-width:900px){
+
+    .hero-content h1{
+        font-size:5rem;
+    }
+
+    .overview,
+    .mobile-experience{
+        grid-template-columns:1fr;
+    }
+
+    .overview-left h2,
+    .mobile-left h2,
+    .direction h2,
+    .closing h2{
+        font-size:4rem;
+    }
+
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .hero-content{
+        bottom:8%;
+    }
+
+    .hero-content h1{
+        font-size:3.5rem;
+
+        line-height:1;
+    }
+
+    .overview,
+    .mobile-experience{
+        padding:120px 7%;
+    }
+
+    .direction,
+    .closing{
+        padding:140px 7%;
+    }
+
+    .overview-left h2,
+    .mobile-left h2,
+    .direction h2,
+    .closing h2{
+        font-size:3rem;
+    }
+
+    .mobile-right{
+        flex-direction:column;
+    }
+
+    .mobile-right img{
+        width:100%;
+    }
+
+}
