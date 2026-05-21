@@ -350,13 +350,14 @@ body{
 
 }
 
+/* LIVE BUTTON */
 
 .live-btn{
     display:inline-block;
 
     margin-top:40px;
 
-    padding:18px 38px;
+    padding:18px 40px;
 
     border:
     1px solid rgba(255,255,255,0.12);
@@ -367,10 +368,15 @@ body{
 
     letter-spacing:3px;
 
-    font-size:0.75rem;
+    font-size:0.78rem;
 
     transition:0.5s ease;
+
+    background:
+    rgba(255,255,255,0.03);
 }
+
+/* HOVER */
 
 .live-btn:hover{
     background:#F5F1E8;
