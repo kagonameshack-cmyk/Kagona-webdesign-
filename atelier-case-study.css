@@ -349,3 +349,31 @@ body{
     }
 
 }
+
+
+.live-btn{
+    display:inline-block;
+
+    margin-top:40px;
+
+    padding:18px 38px;
+
+    border:
+    1px solid rgba(255,255,255,0.12);
+
+    color:#F5F1E8;
+
+    text-decoration:none;
+
+    letter-spacing:3px;
+
+    font-size:0.75rem;
+
+    transition:0.5s ease;
+}
+
+.live-btn:hover{
+    background:#F5F1E8;
+
+    color:#050505;
+}
