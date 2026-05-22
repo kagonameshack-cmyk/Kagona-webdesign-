@@ -1,0 +1,357 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050505;
+    color:#F5F1E8;
+    font-family:'Inter',sans-serif;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.case-hero{
+    position:relative;
+    height:100vh;
+    overflow:hidden;
+}
+
+.case-hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    filter:brightness(45%);
+}
+
+/* OVERLAY */
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.25),
+        rgba(0,0,0,0.82)
+    );
+
+    z-index:1;
+}
+
+/* HERO CONTENT */
+
+.hero-content{
+    position:absolute;
+
+    left:7%;
+    bottom:10%;
+
+    z-index:5;
+
+    max-width:760px;
+}
+
+.hero-content p{
+    color:#C9A97D;
+
+    letter-spacing:5px;
+
+    font-size:0.75rem;
+
+    margin-bottom:28px;
+}
+
+.hero-content h1{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:5.8rem;
+    font-weight:300;
+
+    line-height:0.95;
+
+    margin-bottom:40px;
+}
+
+/* BUTTON */
+
+.live-btn{
+    display:inline-block;
+
+    padding:18px 40px;
+
+    border:
+    1px solid rgba(255,255,255,0.12);
+
+    color:#F5F1E8;
+
+    text-decoration:none;
+
+    letter-spacing:3px;
+
+    font-size:0.75rem;
+
+    transition:0.5s ease;
+}
+
+.live-btn:hover{
+    background:#F5F1E8;
+    color:#050505;
+}
+
+/* OVERVIEW */
+
+.overview{
+    padding:160px 7%;
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:100px;
+}
+
+.overview-left p{
+    color:#C9A97D;
+
+    letter-spacing:5px;
+
+    font-size:0.75rem;
+
+    margin-bottom:28px;
+}
+
+.overview-left h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:4rem;
+    font-weight:300;
+
+    line-height:1;
+}
+
+.overview-right{
+    display:flex;
+    align-items:flex-end;
+}
+
+.overview-right p{
+    color:#BDBDBD;
+
+    line-height:2;
+
+    font-size:1rem;
+
+    max-width:520px;
+}
+
+/* SHOWCASE */
+
+.showcase{
+    padding:0 7% 160px;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:35px;
+}
+
+.showcase img{
+    width:100%;
+
+    height:850px;
+
+    object-fit:cover;
+}
+
+/* DIRECTION */
+
+.direction{
+    padding:0 7% 180px;
+
+    max-width:1200px;
+}
+
+.direction p{
+    color:#C9A97D;
+
+    letter-spacing:5px;
+
+    font-size:0.75rem;
+
+    margin-bottom:28px;
+}
+
+.direction h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:5rem;
+    font-weight:300;
+
+    line-height:1;
+}
+
+/* MOBILE EXPERIENCE */
+
+.mobile-experience{
+    padding:0 7% 180px;
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:80px;
+}
+
+.mobile-left p{
+    color:#C9A97D;
+
+    letter-spacing:5px;
+
+    font-size:0.75rem;
+
+    margin-bottom:28px;
+}
+
+.mobile-left h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:4rem;
+    font-weight:300;
+
+    line-height:1;
+}
+
+.mobile-right{
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:25px;
+}
+
+.mobile-right img{
+    width:100%;
+
+    object-fit:cover;
+}
+
+/* CLOSING */
+
+.closing{
+    padding:180px 7%;
+
+    text-align:center;
+
+    border-top:
+    1px solid rgba(255,255,255,0.06);
+}
+
+.closing p{
+    color:#C9A97D;
+
+    letter-spacing:5px;
+
+    font-size:0.75rem;
+
+    margin-bottom:28px;
+}
+
+.closing h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:5rem;
+    font-weight:300;
+
+    line-height:1;
+}
+
+/* TABLET */
+
+@media(max-width:992px){
+
+    .hero-content h1{
+        font-size:4.5rem;
+    }
+
+    .overview,
+    .mobile-experience{
+        grid-template-columns:1fr;
+    }
+
+    .overview-left h2,
+    .mobile-left h2,
+    .direction h2,
+    .closing h2{
+        font-size:3.5rem;
+    }
+
+    .showcase img{
+        height:650px;
+    }
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .hero-content{
+        left:6%;
+        right:6%;
+    }
+
+    .hero-content h1{
+        font-size:3.2rem;
+    }
+
+    .overview{
+        padding:120px 6%;
+        gap:60px;
+    }
+
+    .showcase{
+        padding:0 6% 120px;
+    }
+
+    .showcase img{
+        height:420px;
+    }
+
+    .direction{
+        padding:0 6% 120px;
+    }
+
+    .mobile-experience{
+        padding:0 6% 120px;
+    }
+
+    .mobile-right{
+        grid-template-columns:1fr;
+    }
+
+    .overview-left h2,
+    .mobile-left h2,
+    .direction h2,
+    .closing h2{
+        font-size:2.6rem;
+    }
+
+    .closing{
+        padding:120px 6%;
+    }
+
+}
