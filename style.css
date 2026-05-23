@@ -1313,71 +1313,82 @@ nav a:hover::after{
     display:block;
 }
 
-/* FORM */
+/* CONTACT FORM */
 
-.contact-form{
-    display:flex;
-    flex-direction:column;
-
-    gap:32px;
+.contact form{
+    margin-top:90px;
 }
 
-/* INPUT */
+/* INPUT GROUP */
 
-.input-group input,
-.input-group textarea{
+.input-group{
+    margin-bottom:65px;
+}
+
+/* INPUTS */
+
+.contact input,
+.contact textarea{
     width:100%;
 
     background:transparent;
 
     border:none;
-
     border-bottom:
     1px solid rgba(255,255,255,0.08);
 
-    padding:24px 0;
+    padding:0 0 24px;
 
     color:#F5F1E8;
 
-    font-size:1rem;
+    font-size:1.05rem;
+
+    font-family:'Inter',sans-serif;
+
+    letter-spacing:1px;
 
     outline:none;
 
-    transition:0.4s ease;
+    transition:0.45s ease;
 }
 
 /* TEXTAREA */
 
-.input-group textarea{
-    min-height:160px;
+.contact textarea{
+    min-height:180px;
 
     resize:none;
+
+    padding-top:10px;
+
+    line-height:1.9;
 }
 
 /* PLACEHOLDER */
 
-.input-group input::placeholder,
-.input-group textarea::placeholder{
-    color:#7E7E7E;
+.contact input::placeholder,
+.contact textarea::placeholder{
+    color:#6f6f6f;
 
-    letter-spacing:1px;
+    letter-spacing:3px;
 }
 
-/* FOCUS */
+/* FOCUS EFFECT */
 
-.input-group input:focus,
-.input-group textarea:focus{
-    border-color:#C9A97D;
+.contact input:focus,
+.contact textarea:focus{
+    border-color:
+    rgba(201,169,125,0.45);
 }
 
 /* BUTTON */
 
-.contact-form button{
-    width:fit-content;
+.contact button{
+    width:100%;
 
-    margin-top:10px;
+    padding:24px;
 
-    padding:18px 42px;
+    margin-top:20px;
 
     background:transparent;
 
@@ -1386,21 +1397,39 @@ nav a:hover::after{
 
     color:#F5F1E8;
 
-    letter-spacing:3px;
-
     font-size:0.78rem;
+
+    letter-spacing:5px;
 
     cursor:pointer;
 
-    transition:0.5s ease;
+    transition:0.45s ease;
+
+    font-family:'Inter',sans-serif;
 }
 
-/* HOVER */
+/* BUTTON HOVER */
 
-.contact-form button:hover{
+.contact button:hover{
     background:#F5F1E8;
 
     color:#050505;
+
+    transform:translateY(-2px);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .input-group{
+        margin-bottom:50px;
+    }
+
+    .contact textarea{
+        min-height:160px;
+    }
+
 }
 
 /* TABLET */
