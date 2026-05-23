@@ -1,5 +1,5 @@
 emailjs.init({
-    publicKey:"YOUR_PUBLIC_KEY",
+    publicKey:"88PqxcgG41b24-rym",
 });
 
 const form =
