@@ -1,0 +1,427 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#040404;
+    color:#f5f5f5;
+    font-family:'Inter',sans-serif;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.case-hero{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+
+.case-hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    filter:brightness(42%);
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.82)
+    );
+
+    z-index:1;
+}
+
+/* HERO CONTENT */
+
+.hero-content{
+    position:absolute;
+
+    left:7%;
+    bottom:12%;
+
+    z-index:5;
+
+    max-width:720px;
+}
+
+.hero-content p{
+    color:#b8b8b8;
+
+    letter-spacing:5px;
+
+    font-size:0.75rem;
+
+    margin-bottom:25px;
+}
+
+.hero-content h1{
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:5.8rem;
+    font-weight:400;
+
+    line-height:0.92;
+
+    margin-bottom:35px;
+}
+
+.live-btn{
+    display:inline-block;
+
+    padding:18px 42px;
+
+    border:
+    1px solid rgba(255,255,255,0.12);
+
+    color:#f5f5f5;
+
+    text-decoration:none;
+
+    letter-spacing:4px;
+
+    font-size:0.72rem;
+
+    transition:0.45s ease;
+}
+
+.live-btn:hover{
+    background:#f5f5f5;
+    color:#050505;
+}
+
+/* OVERVIEW */
+
+.overview{
+    padding:170px 7%;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    gap:120px;
+}
+
+.overview-left p{
+    color:#9f9f9f;
+
+    letter-spacing:4px;
+
+    font-size:0.75rem;
+
+    margin-bottom:25px;
+}
+
+.overview-left h2{
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:3.9rem;
+    font-weight:400;
+
+    line-height:1.03;
+}
+
+.overview-right{
+    display:flex;
+    align-items:flex-end;
+}
+
+.overview-right p{
+    color:#9d9d9d;
+
+    line-height:2.1;
+}
+
+/* FASHION SHOWCASE */
+
+.fashion-showcase{
+    padding:0 7% 190px;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    gap:35px;
+}
+
+.fashion-card{
+    position:relative;
+
+    overflow:hidden;
+
+    height:780px;
+}
+
+.fashion-card img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:1.2s ease;
+}
+
+.fashion-card:hover img{
+    transform:scale(1.04);
+}
+
+.fashion-info{
+    position:absolute;
+
+    bottom:45px;
+    left:40px;
+
+    z-index:5;
+
+    max-width:430px;
+}
+
+.fashion-info span{
+    color:#cfcfcf;
+
+    letter-spacing:4px;
+
+    font-size:0.72rem;
+}
+
+.fashion-info h3{
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:3rem;
+    font-weight:400;
+
+    line-height:1;
+
+    margin:18px 0;
+}
+
+.fashion-info p{
+    color:#d0d0d0;
+
+    line-height:1.9;
+}
+
+/* ATMOSPHERE */
+
+.atmosphere{
+    padding:0 7% 190px;
+}
+
+.atmosphere-content{
+    margin-bottom:70px;
+
+    max-width:760px;
+}
+
+.atmosphere-content p{
+    color:#a5a5a5;
+
+    letter-spacing:4px;
+
+    font-size:0.75rem;
+
+    margin-bottom:25px;
+}
+
+.atmosphere-content h2{
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:5rem;
+    font-weight:400;
+
+    line-height:1;
+}
+
+.atmosphere img{
+    width:100%;
+    height:850px;
+
+    object-fit:cover;
+}
+
+/* MOBILE EXPERIENCE */
+
+.mobile-experience{
+    padding:0 7% 190px;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    gap:100px;
+}
+
+.mobile-left p{
+    color:#a5a5a5;
+
+    letter-spacing:4px;
+
+    font-size:0.75rem;
+
+    margin-bottom:25px;
+}
+
+.mobile-left h2{
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:3.5rem;
+    font-weight:400;
+
+    line-height:1.08;
+}
+
+.mobile-right{
+    display:flex;
+    gap:25px;
+}
+
+.mobile-right img{
+    width:50%;
+    object-fit:cover;
+}
+
+/* CLOSING */
+
+.closing{
+    padding:190px 7%;
+
+    text-align:center;
+
+    border-top:
+    1px solid rgba(255,255,255,0.06);
+}
+
+.closing p{
+    color:#9f9f9f;
+
+    letter-spacing:4px;
+
+    font-size:0.75rem;
+
+    margin-bottom:25px;
+}
+
+.closing h2{
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:4.5rem;
+    font-weight:400;
+
+    line-height:1.08;
+
+    max-width:950px;
+
+    margin:auto;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+    .overview,
+    .fashion-showcase,
+    .mobile-experience{
+        grid-template-columns:1fr;
+    }
+
+    .hero-content h1{
+        font-size:4.2rem;
+    }
+
+    .overview-left h2,
+    .mobile-left h2{
+        font-size:3rem;
+    }
+
+    .atmosphere-content h2{
+        font-size:3.8rem;
+    }
+
+    .closing h2{
+        font-size:3.2rem;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero-content{
+        left:6%;
+        bottom:10%;
+    }
+
+    .hero-content h1{
+        font-size:3rem;
+    }
+
+    .overview,
+    .fashion-showcase,
+    .mobile-experience,
+    .atmosphere,
+    .closing{
+        padding-left:6%;
+        padding-right:6%;
+    }
+
+    .overview{
+        padding-top:110px;
+        padding-bottom:110px;
+    }
+
+    .fashion-showcase{
+        padding-bottom:120px;
+    }
+
+    .fashion-card{
+        height:580px;
+    }
+
+    .fashion-info{
+        left:28px;
+        bottom:30px;
+    }
+
+    .fashion-info h3{
+        font-size:2.2rem;
+    }
+
+    .atmosphere img{
+        height:500px;
+    }
+
+    .mobile-right{
+        flex-direction:column;
+    }
+
+    .mobile-right img{
+        width:100%;
+    }
+
+    .closing{
+        padding-top:130px;
+        padding-bottom:130px;
+    }
+
+    .closing h2{
+        font-size:2.4rem;
+    }
+
+}
