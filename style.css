@@ -1695,3 +1695,70 @@ nav a:hover::after{
     transform:
     translateY(0);
 }
+
+
+/* FLOATING WHATSAPP */
+
+.floating-whatsapp{
+    position:fixed;
+
+    right:25px;
+    bottom:25px;
+
+    z-index:999;
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    padding:14px 18px;
+
+    background:
+    rgba(10,10,10,0.72);
+
+    backdrop-filter:blur(14px);
+
+    border:
+    1px solid rgba(201,169,125,0.18);
+
+    color:#F5F1E8;
+
+    text-decoration:none;
+
+    border-radius:100px;
+
+    font-size:0.78rem;
+    letter-spacing:1.5px;
+
+    transition:0.45s ease;
+}
+
+.floating-whatsapp i{
+    font-size:1.1rem;
+    color:#C9A97D;
+}
+
+.floating-whatsapp:hover{
+    transform:translateY(-4px);
+
+    border-color:
+    rgba(201,169,125,0.45);
+
+    background:
+    rgba(20,20,20,0.88);
+}
+
+@media(max-width:768px){
+
+    .floating-whatsapp{
+        right:18px;
+        bottom:18px;
+
+        padding:13px 16px;
+    }
+
+    .floating-whatsapp span{
+        display:none;
+    }
+
+        }
