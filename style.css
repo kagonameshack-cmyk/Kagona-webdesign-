@@ -1762,3 +1762,139 @@ nav a:hover::after{
     }
 
         }
+
+/* WHY KAGONA */
+
+.why-kagona{
+    padding:0 7% 180px;
+}
+
+.why-header{
+    max-width:900px;
+    margin-bottom:90px;
+}
+
+.why-header p{
+    color:#C9A97D;
+
+    letter-spacing:4px;
+
+    font-size:0.75rem;
+
+    margin-bottom:25px;
+}
+
+.why-header h2{
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:4.5rem;
+    font-weight:300;
+
+    line-height:1.05;
+
+    margin-bottom:35px;
+}
+
+.why-header span{
+    display:block;
+
+    max-width:700px;
+
+    color:#AFAFAF;
+
+    line-height:2;
+}
+
+.why-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:30px;
+}
+
+.why-card{
+    position:relative;
+
+    background:#0B0B0B;
+
+    border:
+    1px solid rgba(255,255,255,0.06);
+
+    padding:50px;
+
+    min-height:320px;
+
+    transition:0.5s ease;
+}
+
+.why-card:hover{
+    border-color:
+    rgba(201,169,125,0.25);
+
+    transform:
+    translateY(-6px);
+}
+
+.why-number{
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:4rem;
+
+    color:
+    rgba(201,169,125,0.12);
+
+    margin-bottom:35px;
+}
+
+.why-card h3{
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:2rem;
+    font-weight:300;
+
+    margin-bottom:20px;
+}
+
+.why-card p{
+    color:#AFAFAF;
+
+    line-height:2;
+    }
+
+@media(max-width:992px){
+
+    .why-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .why-header h2{
+        font-size:3.5rem;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .why-kagona{
+        padding:0 6% 140px;
+    }
+
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    .why-header h2{
+        font-size:3rem;
+    }
+
+    .why-card{
+        padding:40px;
+    }
+
+    }
