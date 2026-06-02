@@ -33,7 +33,7 @@ document.querySelectorAll(
 
 const reveals = document.querySelectorAll(
 
-'.projects-title, .project-card, .journal-title, .journal-card, .philosophy-left, .philosophy-item, .services-title, .service-card, .process-title, .process-card, .contact-left, .contact-form'
+'.projects-title, .project-card, .why-header, .why-card, .journal-title, .journal-card, .philosophy-left, .philosophy-item, .services-title, .service-card, .process-title, .process-card, .contact-left, .contact-form'
 
 );
 
