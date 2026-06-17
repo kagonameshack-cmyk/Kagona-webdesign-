@@ -2104,3 +2104,152 @@ nav a:hover::after{
     }
 
     }
+
+/* ==========================
+   FINAL CTA
+========================== */
+
+.final-cta{
+
+    position:relative;
+
+    padding:220px 7%;
+
+    text-align:center;
+
+    overflow:hidden;
+}
+
+.final-cta::before{
+
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:
+    radial-gradient(
+        circle at center,
+        rgba(201,169,125,0.12),
+        transparent 70%
+    );
+}
+
+.final-cta-content{
+
+    position:relative;
+    z-index:5;
+
+    max-width:900px;
+
+    margin:auto;
+}
+
+/* LABEL */
+
+.final-cta p{
+
+    color:#C9A97D;
+
+    letter-spacing:4px;
+
+    font-size:0.75rem;
+
+    margin-bottom:30px;
+}
+
+/* HEADING */
+
+.final-cta h2{
+
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:5rem;
+    font-weight:300;
+
+    line-height:1;
+
+    margin-bottom:35px;
+}
+
+/* DESCRIPTION */
+
+.final-cta span{
+
+    display:block;
+
+    max-width:700px;
+
+    margin:auto auto 60px;
+
+    color:#B5B5B5;
+
+    line-height:2;
+}
+
+/* BUTTON */
+
+.final-cta-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    padding:20px 50px;
+
+    text-decoration:none;
+
+    color:#F5F1E8;
+
+    border:
+    1px solid
+    rgba(255,255,255,0.12);
+
+    letter-spacing:3px;
+
+    font-size:0.75rem;
+
+    transition:0.45s ease;
+}
+
+/* HOVER */
+
+.final-cta-btn:hover{
+
+    background:#F5F1E8;
+
+    color:#050505;
+
+    transform:
+    translateY(-3px);
+}
+
+@media(max-width:768px){
+
+    .final-cta{
+
+        padding:160px 6%;
+    }
+
+    .final-cta h2{
+
+        font-size:3rem;
+
+        line-height:1.1;
+    }
+
+    .final-cta span{
+
+        font-size:0.95rem;
+    }
+
+    .final-cta-btn{
+
+        width:100%;
+
+        padding:18px 25px;
+    }
+
+    }
