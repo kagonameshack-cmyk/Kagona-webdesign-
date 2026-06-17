@@ -1900,3 +1900,207 @@ nav a:hover::after{
     }
 
     }
+
+
+/* ==========================
+   PRICING
+========================== */
+
+.pricing-section{
+    padding:180px 7%;
+}
+
+.pricing-header{
+    text-align:center;
+    max-width:900px;
+    margin:auto auto 90px;
+}
+
+.pricing-header p{
+    color:#C9A97D;
+
+    letter-spacing:4px;
+
+    font-size:0.75rem;
+
+    margin-bottom:25px;
+}
+
+.pricing-header h2{
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:4.5rem;
+    font-weight:300;
+
+    line-height:1.05;
+
+    margin-bottom:35px;
+}
+
+.pricing-header span{
+    display:block;
+
+    color:#AFAFAF;
+
+    line-height:2;
+
+    max-width:650px;
+
+    margin:auto;
+}
+
+/* GRID */
+
+.pricing-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:35px;
+}
+
+/* CARD */
+
+.pricing-card{
+    position:relative;
+
+    padding:55px 45px;
+
+    border:
+    1px solid
+    rgba(255,255,255,0.06);
+
+    background:
+    rgba(255,255,255,0.015);
+
+    transition:0.5s ease;
+
+    overflow:hidden;
+}
+
+.pricing-card:hover{
+
+    transform:
+    translateY(-8px);
+
+    border-color:
+    rgba(201,169,125,0.25);
+}
+
+/* FEATURED */
+
+.pricing-card.featured{
+
+    border:
+    1px solid
+    rgba(201,169,125,0.25);
+
+    background:
+    linear-gradient(
+        180deg,
+        rgba(201,169,125,0.05),
+        rgba(255,255,255,0.015)
+    );
+}
+
+/* PACKAGE */
+
+.pricing-card h3{
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:2.3rem;
+    font-weight:300;
+
+    margin-bottom:30px;
+}
+
+/* PRICE */
+
+.price{
+    color:#C9A97D;
+
+    font-size:2rem;
+    font-weight:500;
+
+    margin-bottom:40px;
+}
+
+/* FEATURES */
+
+.pricing-card ul{
+    list-style:none;
+}
+
+.pricing-card ul li{
+
+    color:#BEBEBE;
+
+    line-height:2.3;
+
+    border-bottom:
+    1px solid
+    rgba(255,255,255,0.04);
+
+    padding:12px 0;
+}
+
+/* HOVER GLOW */
+
+.pricing-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    radial-gradient(
+        circle at top,
+        rgba(201,169,125,0.08),
+        transparent 70%
+    );
+
+    opacity:0;
+
+    transition:0.5s ease;
+}
+
+.pricing-card:hover::before{
+    opacity:1;
+    }
+
+@media(max-width:992px){
+
+    .pricing-grid{
+        grid-template-columns:1fr;
+    }
+
+    .pricing-header h2{
+        font-size:3rem;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .pricing-section{
+        padding:140px 6%;
+    }
+
+    .pricing-card{
+        padding:45px 35px;
+    }
+
+    .pricing-card h3{
+        font-size:2rem;
+    }
+
+    .price{
+        font-size:1.8rem;
+    }
+
+    }
