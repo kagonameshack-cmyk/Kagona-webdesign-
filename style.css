@@ -2254,3 +2254,262 @@ nav a:hover::after{
     }
 
     }
+
+/* ==========================
+   WHAT A BETTER WEBSITE CHANGES
+========================== */
+
+.results{
+
+    padding:180px 7%;
+}
+
+.results-title{
+
+    text-align:center;
+
+    max-width:900px;
+
+    margin:auto auto 90px;
+}
+
+.results-title p{
+
+    color:#C9A97D;
+
+    letter-spacing:4px;
+
+    font-size:0.75rem;
+
+    margin-bottom:25px;
+}
+
+.results-title h2{
+
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:4.5rem;
+    font-weight:300;
+
+    line-height:1.05;
+}
+
+.results-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:35px;
+}
+
+.result-card{
+
+    padding:50px;
+
+    border:
+    1px solid rgba(255,255,255,0.06);
+
+    background:
+    rgba(255,255,255,0.01);
+
+    transition:0.45s ease;
+}
+
+.result-card:hover{
+
+    border-color:
+    rgba(201,169,125,0.25);
+
+    transform:
+    translateY(-5px);
+}
+
+.result-card h3{
+
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:2rem;
+    font-weight:300;
+
+    margin-bottom:20px;
+}
+
+.result-card span{
+
+    color:#B5B5B5;
+
+    line-height:2;
+}
+
+
+/* ==========================
+   EVERYTHING INCLUDED
+========================== */
+
+.included{
+
+    padding:0 7% 180px;
+}
+
+.included-content{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    text-align:center;
+}
+
+.included-content p{
+
+    color:#C9A97D;
+
+    letter-spacing:4px;
+
+    font-size:0.75rem;
+
+    margin-bottom:25px;
+}
+
+.included-content h2{
+
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:4.5rem;
+    font-weight:300;
+
+    line-height:1.05;
+
+    margin-bottom:35px;
+}
+
+.included-content span{
+
+    display:block;
+
+    max-width:700px;
+
+    margin:auto auto 60px;
+
+    color:#B5B5B5;
+
+    line-height:2;
+}
+
+.included-list{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:25px;
+}
+
+.included-list div{
+
+    padding:30px;
+
+    border:
+    1px solid rgba(255,255,255,0.06);
+
+    color:#F5F1E8;
+
+    letter-spacing:1px;
+        }
+
+
+/* ==========================
+   KAGONA PHILOSOPHY
+========================== */
+
+.philosophy{
+
+    padding:180px 7%;
+
+    text-align:center;
+}
+
+.philosophy-content{
+
+    max-width:900px;
+
+    margin:auto;
+}
+
+.philosophy-content p{
+
+    color:#C9A97D;
+
+    letter-spacing:4px;
+
+    font-size:0.75rem;
+
+    margin-bottom:30px;
+}
+
+.philosophy-content h2{
+
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:5rem;
+    font-weight:300;
+
+    line-height:1.05;
+
+    margin-bottom:40px;
+}
+
+.philosophy-content span{
+
+    display:block;
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#B5B5B5;
+
+    line-height:2;
+        }
+
+
+@media(max-width:768px){
+
+    .results,
+    .included,
+    .philosophy{
+
+        padding-left:6%;
+        padding-right:6%;
+    }
+
+    .results-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .included-list{
+
+        grid-template-columns:1fr;
+    }
+
+    .results-title h2,
+    .included-content h2,
+    .philosophy-content h2{
+
+        font-size:3rem;
+    }
+
+    .result-card{
+
+        padding:35px;
+    }
+
+       }
