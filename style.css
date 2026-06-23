@@ -111,6 +111,24 @@ header{
     top 0.4s ease;
 }
 
+header{
+    opacity:0;
+
+    transform:
+    translateY(-30px);
+
+    transition:
+    all 0.5s ease;
+}
+
+header.show-header{
+
+    opacity:1;
+
+    transform:
+    translateY(0);
+}
+
 /* LOGO */
 
 .logo{
@@ -177,7 +195,6 @@ nav a:hover::after{
 
 .hero-content{
     position:relative;
-
     z-index:5;
 
     min-height:100vh;
@@ -185,13 +202,12 @@ nav a:hover::after{
     display:flex;
     flex-direction:column;
 
-    justify-content:center;
+    justify-content:flex-start;
 
-    padding:0 7%;
+    padding:
+    220px 7% 100px;
 
     max-width:900px;
-
-    z-index:2;
 }
 
 /* SMALL TEXT */
