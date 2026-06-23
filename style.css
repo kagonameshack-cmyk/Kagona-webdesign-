@@ -115,10 +115,10 @@ header{
     opacity:0;
 
     transform:
+    translateX(-50%)
     translateY(-30px);
 
-    transition:
-    all 0.5s ease;
+    transition:all 0.5s ease;
 }
 
 header.show-header{
@@ -126,6 +126,7 @@ header.show-header{
     opacity:1;
 
     transform:
+    translateX(-50%)
     translateY(0);
 }
 
@@ -217,7 +218,7 @@ nav a:hover::after{
 
     letter-spacing:6px;
 
-    margin-bottom:30px;
+    margin-bottom:20px;
 
     font-size:0.8rem;
 }
@@ -449,11 +450,14 @@ nav a:hover::after{
     }
 
     .hero-content{
-        padding:0 7%;
+    padding-top:140px;
+    padding-left:7%;
+    padding-right:7%;
+    padding-bottom:80px;
     }
 
     .hero-content h1{
-        font-size:3.5rem;
+        font-size:3rem;
 
         line-height:1;
     }
