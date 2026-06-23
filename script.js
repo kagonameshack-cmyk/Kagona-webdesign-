@@ -65,3 +65,25 @@ function revealSections(){
 /* INITIAL CHECK */
 
 revealSections();
+
+
+window.addEventListener("scroll", () => {
+
+    const header =
+    document.querySelector("header");
+
+    if(window.scrollY > 50){
+
+        header.classList.add(
+        "show-header"
+        );
+
+    }else{
+
+        header.classList.remove(
+        "show-header"
+        );
+
+    }
+
+});
