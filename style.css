@@ -2678,17 +2678,17 @@ nav a:hover::after{
 
 
 /* ==========================
-   SERVICES
+   INDUSTRIES
 ========================== */
 
-.services-section{
+.industries-section{
 
     padding:180px 7%;
 
     text-align:center;
 }
 
-.services-label{
+.industries-label{
 
     color:#C9A97D;
 
@@ -2699,7 +2699,7 @@ nav a:hover::after{
     margin-bottom:25px;
 }
 
-.services-section h2{
+.industries-section h2{
 
     font-family:
     'Cormorant Garamond',serif;
@@ -2708,14 +2708,16 @@ nav a:hover::after{
 
     font-weight:300;
 
-    margin-bottom:25px;
+    line-height:1.05;
+
+    margin-bottom:30px;
 }
 
-.services-intro{
+.industries-intro{
 
     display:block;
 
-    max-width:700px;
+    max-width:760px;
 
     margin:auto auto 80px;
 
@@ -2724,21 +2726,19 @@ nav a:hover::after{
     line-height:2;
 }
 
-.services-grid{
+.industries-grid{
 
     display:grid;
 
     grid-template-columns:
-    repeat(auto-fit,minmax(300px,1fr));
+    repeat(auto-fit,minmax(260px,1fr));
 
-    gap:30px;
+    gap:24px;
 }
 
-.service-card{
+.industry-card{
 
-    padding:50px 40px;
-
-    text-align:left;
+    padding:40px 30px;
 
     border:
     1px solid rgba(255,255,255,0.08);
@@ -2746,33 +2746,24 @@ nav a:hover::after{
     background:
     rgba(255,255,255,0.02);
 
-    transition:0.4s ease;
-}
-
-.service-card:hover{
-
-    transform:
-    translateY(-5px);
-
-    border-color:
-    rgba(201,169,125,0.3);
-}
-
-.service-card h3{
-
     font-family:
     'Cormorant Garamond',serif;
 
-    font-size:2rem;
+    font-size:1.6rem;
 
     font-weight:300;
 
-    margin-bottom:20px;
+    transition:0.45s ease;
 }
 
-.service-card span{
+.industry-card:hover{
 
-    color:#B5B5B5;
+    transform:
+    translateY(-6px);
 
-    line-height:1.9;
-}
+    border-color:
+    rgba(201,169,125,0.35);
+
+    color:#C9A97D;
+    }
+
