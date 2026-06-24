@@ -2675,3 +2675,104 @@ nav a:hover::after{
 
     line-height:1.8;
 }
+
+
+/* ==========================
+   SERVICES
+========================== */
+
+.services-section{
+
+    padding:180px 7%;
+
+    text-align:center;
+}
+
+.services-label{
+
+    color:#C9A97D;
+
+    letter-spacing:4px;
+
+    font-size:0.75rem;
+
+    margin-bottom:25px;
+}
+
+.services-section h2{
+
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:4rem;
+
+    font-weight:300;
+
+    margin-bottom:25px;
+}
+
+.services-intro{
+
+    display:block;
+
+    max-width:700px;
+
+    margin:auto auto 80px;
+
+    color:#B5B5B5;
+
+    line-height:2;
+}
+
+.services-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+}
+
+.service-card{
+
+    padding:50px 40px;
+
+    text-align:left;
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    background:
+    rgba(255,255,255,0.02);
+
+    transition:0.4s ease;
+}
+
+.service-card:hover{
+
+    transform:
+    translateY(-5px);
+
+    border-color:
+    rgba(201,169,125,0.3);
+}
+
+.service-card h3{
+
+    font-family:
+    'Cormorant Garamond',serif;
+
+    font-size:2rem;
+
+    font-weight:300;
+
+    margin-bottom:20px;
+}
+
+.service-card span{
+
+    color:#B5B5B5;
+
+    line-height:1.9;
+}
