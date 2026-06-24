@@ -2533,3 +2533,145 @@ nav a:hover::after{
     }
 
        }
+
+/* ==========================
+   TRUST SECTION 
+========================== */
+
+
+.trust-section{
+
+    padding:180px 7%;
+
+    text-align:center;
+}
+
+.trust-label{
+
+    color:#C9A97D;
+
+    letter-spacing:4px;
+
+    font-size:0.75rem;
+
+    margin-bottom:25px;
+}
+
+.trust-section h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:4rem;
+
+    font-weight:300;
+
+    margin-bottom:80px;
+}
+
+.trust-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+}
+
+.trust-card{
+
+    padding:50px 35px;
+
+    border:1px solid
+    rgba(255,255,255,0.08);
+
+    background:
+    rgba(255,255,255,0.02);
+}
+
+.trust-card h3{
+
+    margin-bottom:20px;
+
+    font-weight:500;
+}
+
+.trust-card span{
+
+    color:#B5B5B5;
+
+    line-height:1.8;
+    }
+
+
+/* ==========================
+   PROCESS SECTION 
+========================== */
+
+.process-section{
+
+    padding:180px 7%;
+
+    text-align:center;
+}
+
+.process-label{
+
+    color:#C9A97D;
+
+    letter-spacing:4px;
+
+    font-size:0.75rem;
+
+    margin-bottom:25px;
+}
+
+.process-section h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:4rem;
+
+    font-weight:300;
+
+    margin-bottom:80px;
+}
+
+.process-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+}
+
+.process-card{
+
+    padding:50px 30px;
+
+    border:1px solid
+    rgba(255,255,255,0.08);
+}
+
+.process-card h3{
+
+    color:#C9A97D;
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+}
+
+.process-card h4{
+
+    margin-bottom:20px;
+}
+
+.process-card span{
+
+    color:#B5B5B5;
+
+    line-height:1.8;
+}
