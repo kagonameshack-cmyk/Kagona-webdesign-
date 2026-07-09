@@ -1684,10 +1684,6 @@ nav a:hover::after{
 
 /* REVEAL ANIMATIONS */
 
-.hero-content p,
-.hero-content h1,
-.hero-content span,
-.hero-buttons,
 .projects-title,
 .project-card,
 .why-header,
@@ -1700,6 +1696,10 @@ nav a:hover::after{
 .service-card,
 .process-title,
 .process-card,
+.hero-content p,
+.hero-content h1,
+.hero-content span,
+.hero-buttons,
 .contact-left,
 .contact-form{
 
