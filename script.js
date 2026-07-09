@@ -33,7 +33,7 @@ document.querySelectorAll(
 
 const reveals = document.querySelectorAll(
 
-'.hero-content p, .hero-content h1, .hero-content span, .hero-buttons, .projects-title, .project-card, .why-header, .why-card, .journal-title, .journal-card, .philosophy-left, .philosophy-item, .services-title, .service-card, .process-title, .process-card, .industries-section, .industry-card, .contact-left, .contact-form'
+'.project-card, .why-header, .why-card, .journal-title, .journal-card, .philosophy-left, .philosophy-item, .services-title, .service-card, .process-title, .process-card, .industries-section, .industry-card, .hero-content p, .hero-content h1, .hero-content span, .hero-buttons,.contact-left, .contact-form'
 
 );
 
